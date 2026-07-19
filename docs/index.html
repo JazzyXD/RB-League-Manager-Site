@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>USBL — League Stats</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a href="#/" class="brand">USBL</a>
+      <nav class="topbar__nav">
+        <a href="#/">Standings</a>
+        <a href="#/leaders">Leaders</a>
+        <a href="#/games">Games</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="arena" id="arena" aria-label="Team and player finder">
+    <div class="arena__court">
+      <div class="arena__yardlines" aria-hidden="true"></div>
+      <div class="arena__circle" aria-hidden="true"></div>
+
+      <!-- Two-team mode: a dropdown in each top corner -->
+      <div class="arena__corner arena__corner--left" id="arena-team-a-wrap">
+        <label class="arena__corner-label">Team A</label>
+        <select class="arena__select" id="arena-team-a">
+          <option value="">Select team…</option>
+        </select>
+      </div>
+
+      <div class="arena__corner arena__corner--right" id="arena-team-b-wrap">
+        <label class="arena__corner-label">Team B</label>
+        <select class="arena__select" id="arena-team-b">
+          <option value="">Select team…</option>
+        </select>
+      </div>
+
+      <!-- Player mode: one centered box, hidden until toggled -->
+      <div class="arena__player-wrap" id="arena-player-wrap" hidden>
+        <label class="arena__corner-label">Roblox username</label>
+        <input
+          class="arena__select"
+          id="arena-player-input"
+          type="text"
+          list="arena-player-list"
+          placeholder="Start typing a username…"
+          autocomplete="off"
+        />
+        <datalist id="arena-player-list"></datalist>
+      </div>
+
+      <div class="arena__center">
+        <button class="arena__action" id="arena-compare-btn" disabled>Compare</button>
+        <button class="arena__action" id="arena-view-player-btn" hidden disabled>View Player</button>
+        <button class="arena__mode-toggle" id="arena-mode-toggle">Player</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="scoreboard" id="scoreboard" aria-label="League snapshot">
+    <div class="scoreboard__bezel">
+      <div class="scoreboard__label">LEAGUE LEADER</div>
+      <div class="scoreboard__row" id="scoreboard-row">
+        <span class="scoreboard__digits">--</span>
+      </div>
+      <div class="scoreboard__sub" id="scoreboard-sub">Waiting for the first game to be recorded.</div>
+    </div>
+  </div>
+
+  <main class="content" id="content">
+    <p class="loading">Loading…</p>
+  </main>
+
+  <footer class="footer">
+    <span id="footer-updated">Not yet published</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
