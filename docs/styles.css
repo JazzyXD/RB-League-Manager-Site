@@ -169,11 +169,22 @@ a {
   position: relative;
   z-index: 1;
   max-width: 320px;
-  margin: 0 auto;
+  margin: 18px auto 0;
   display: flex;
   flex-direction: column;
   gap: 6px;
   clear: both;
+}
+
+/* .arena__corner and .arena__player-wrap set display:flex above, which (being
+   an author-stylesheet rule) otherwise beats the browser's default
+   `[hidden] { display: none }` rule regardless of the hidden attribute --
+   so JS setting .hidden = true wasn't actually hiding them. These two
+   selectors have higher specificity than the plain class rules above, so
+   they win once `hidden` is set, and losing once it's removed. */
+.arena__corner[hidden],
+.arena__player-wrap[hidden] {
+  display: none;
 }
 
 .arena__corner-label {
