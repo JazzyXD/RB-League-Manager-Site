@@ -14,5 +14,13 @@
     "losses": 0,
     "avg_ppg": 0.0,
     "roster_size": 0
+  },
+  {
+    "name": "washington wizards",
+    "role_id": 1528674228692324463,
+    "wins": 0,
+    "losses": 0,
+    "avg_ppg": 0.0,
+    "roster_size": 0
   }
 ]
