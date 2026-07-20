@@ -20,5 +20,16 @@
     "leading_rebounder": null,
     "leading_assister": null,
     "recent_game_ids": []
+  },
+  "washington wizards": {
+    "name": "washington wizards",
+    "wins": 0,
+    "losses": 0,
+    "avg_ppg": 0.0,
+    "roster": [],
+    "leading_scorer": null,
+    "leading_rebounder": null,
+    "leading_assister": null,
+    "recent_game_ids": []
   }
 }
