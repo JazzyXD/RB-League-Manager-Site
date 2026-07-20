@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "name": "INDIANA PACERS",
+    "role_id": 1528286837096058891,
+    "wins": 0,
+    "losses": 0,
+    "avg_ppg": 0.0,
+    "roster_size": 0
+  },
+  {
+    "name": "TORONTO RAPTORS",
+    "role_id": 1528286770339516460,
+    "wins": 0,
+    "losses": 0,
+    "avg_ppg": 0.0,
+    "roster_size": 0
+  }
+]
