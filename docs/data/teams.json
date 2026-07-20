@@ -1,1 +1,24 @@
-{}
+{
+  "INDIANA PACERS": {
+    "name": "INDIANA PACERS",
+    "wins": 0,
+    "losses": 0,
+    "avg_ppg": 0.0,
+    "roster": [],
+    "leading_scorer": null,
+    "leading_rebounder": null,
+    "leading_assister": null,
+    "recent_game_ids": []
+  },
+  "TORONTO RAPTORS": {
+    "name": "TORONTO RAPTORS",
+    "wins": 0,
+    "losses": 0,
+    "avg_ppg": 0.0,
+    "roster": [],
+    "leading_scorer": null,
+    "leading_rebounder": null,
+    "leading_assister": null,
+    "recent_game_ids": []
+  }
+}
